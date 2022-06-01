@@ -8,6 +8,9 @@ import BooksList from './components/BooksPage/BooksList';
 import Book from './components/BooksPage/Book';
 import Timetable from './components/TimetablePage/Timetable';
 import UnderNav from './components/UnderNav';
+import NotebooksList from './components/NotebooksPage/NotebooksList';
+import CreateNotebook from './components/NotebooksPage/CreateNotebook';
+import Notebook from './components/NotebooksPage/Notebook';
 
 
 class App extends React.Component {
@@ -32,6 +35,11 @@ class App extends React.Component {
     
     nextLeson: "Ukrainian",
     nextLesonTime: [8,30],
+
+    notebooksListDate:[
+      [0,"Notebooks1","Some text1"],
+      [1,"Notebooks2","Some text2"],
+    ],
     
     logo: "https://cdn.discordapp.com/attachments/736633764930912257/972189609750573076/Screenshot_1.png",
     booksListData:[["ukrainian","1qYKKuTtDOu3P0vHTltb5IxVlis3Ohrfd"],["english","12Iq_mKym8d4Ja-h9rQYG5DIkKJsAfjdC"],["physics","1uGQ_ur5OL1D7BxBCIWUn3OTHuUHEOiVc"],["chemistry","1RNU8UkxKeS7j8J6rba8eqeWbmpAMzPFd"],["english","12Iq_mKym8d4Ja-h9rQYG5DIkKJsAfjdC"],["chemistry","1RNU8UkxKeS7j8J6rba8eqeWbmpAMzPFd"]]
@@ -61,6 +69,19 @@ class App extends React.Component {
     newtimtable[index][index2] = text
     this.setState({timtable:newtimtable})
   }
+
+  updateNotebooks=(text,index,index2)=>{
+    const newNotebooks = this.state.notebooksListDate
+    newNotebooks[index][index2] = text
+    this.setState({notebooksListDate:newNotebooks})
+  }
+
+  crateNotebook=(text,index)=>{
+    const newNotebooks = this.state.notebooksListDate
+    newNotebooks.push([index,text,''])
+    this.setState({notebooksListDate:newNotebooks})
+  }
+
   checkTimetable(){
     let nextTime = ''
     let nextLeson = [0,0]
@@ -80,6 +101,7 @@ class App extends React.Component {
     }
     this.setData(nextTime,nextLeson)
   }
+
   setData=(nextLesonUpdate,nextLesonTimeUpdate)=>{
     this.setState({nextLeson: nextLesonUpdate,nextLesonTime: nextLesonTimeUpdate,date: new Date()})
   }
@@ -100,6 +122,10 @@ class App extends React.Component {
           <Route path="book/:link" exact element={<Book/>}></Route>
 
           <Route path="timetable" element={<Timetable updateTimetable={this.updateTimetable}timetable={this.state.timetable} timetableTimes={this.state.timetableTimes}/>} />
+
+          <Route path="notebooks" element={<NotebooksList notebooksList={this.state.notebooksListDate}/>} />
+          <Route path="createnotebook" element={<CreateNotebook crateNotebook={this.crateNotebook}notebooksList={this.state.notebooksListDate}/>} />
+          <Route path="notebook/:id" element={<Notebook updateNotebooks={this.updateNotebooks} notebooksList={this.state.notebooksListDate}/>} />
 
           <Route path="home" element={<Home state={this.state}/>} />
         </Route>

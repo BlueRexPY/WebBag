@@ -28,11 +28,9 @@ const BooksList = (props) => {
       }
 
     return (
-    <>
     <div className='booksWrapper'>
         {renderItems(ListData)}
     </div>
-    </>
   )
 }
 

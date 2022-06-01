@@ -24,7 +24,7 @@ body {
   padding: 30px;
   padding-top: 50px;
   padding-bottom: 90px;
-  background: #05060D;
+  background: #000;
   color: #FFFFFF;
   width: 390px;
   height: auto;
@@ -402,6 +402,8 @@ body {
   color: #fff;
   font-size: 20px;
   font-weight: bolder;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .gradient1 {
@@ -491,4 +493,87 @@ body {
   padding: 7px;
   padding-left: 11px;
   color: #fff;
+}
+
+.notebooksItem {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  margin: 10px;
+  height: 180px;
+  width: 140px;
+  border-radius: 10px;
+}
+
+.notebooksItem p {
+  text-transform: capitalize;
+  color: #fff;
+  font-size: 17px;
+  font-weight: bolder;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.createNotebook {
+  background-color: #15172B;
+}
+
+.notebook {
+  height: 100%;
+}
+
+.notebookInputTitle {
+  background-color: #000;
+  color: #fff;
+  margin-right: 20px;
+  margin-bottom: 20px;
+  font-size: 30px;
+  width: 80%;
+}
+
+.arrow {
+  background-color: #000;
+  color: #fff;
+  margin-bottom: 20px;
+  font-size: 30px;
+}
+
+.notebookInputText {
+  background-color: #000;
+  color: #fff;
+  font-size: 20px;
+  width: 90%;
+  height: 80%;
+}
+
+.createNotebookInputTitle {
+  text-align: center;
+  background-color: #000;
+  color: #fff;
+  padding: 10px;
+  font-size: 30px;
+  width: 65%;
+  border: #747474 solid 1px;
+  border-radius: 10px;
+}
+
+.createNotebookInputButton {
+  margin-top: 20px;
+  font-size: 30px;
+  padding: 7px;
+  border-radius: 10px;
 }
