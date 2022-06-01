@@ -106,19 +106,32 @@ body {
 }
 
 .underNav {
-  position: fixed;
-  z-index: 1000;
-  left: 50%;
-  bottom: -15px;
-  width: 390px;
-  height: 60px;
-  padding: 30px;
-  background: #000000;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
+  position: fixed;
+  bottom: 0px;
+  left: 50%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
+  bottom: -55px;
+  width: 390px;
+  height: 60px;
+  padding: 30px;
+  padding-bottom: 60px;
+  background: #000000;
 }
 
 .headerInfo {
@@ -435,4 +448,47 @@ body {
   width: 390px;
   height: 400px;
   padding-bottom: 600px;
+}
+
+.timetablePage {
+  padding: 0px;
+  padding-top: 850px;
+}
+
+.timetable {
+  margin-top: 30px;
+  margin-bottom: 20px;
+}
+
+.timetableItem {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 5px;
+  padding-left: 11px;
+  padding-right: 11px;
+  background-color: #000;
+}
+
+.timetableInput {
+  background-color: #000;
+  color: #fff;
+}
+
+.timetableTitle {
+  padding: 7px;
+  padding-left: 11px;
+  color: #fff;
 }

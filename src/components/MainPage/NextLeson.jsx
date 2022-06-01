@@ -8,10 +8,10 @@ const NextLeson = (props) => {
         <div className='nextLeson'>
             <div className='col start'>
                 <div className='headLine normal'>
-                    <h2>{props.nextleson}</h2>
+                    <h2>{props.nextLeson}</h2>
                 </div>
                 <div className='row'>
-                    <p className='properties small bold'>{props.lastDate.getHours()}:{props.lastDate.getMinutes()}</p>
+                    <p className='properties small bold'>{props.nextLesonTime[0]}:{props.nextLesonTime[1]}</p>
                 </div>
             </div>
         </div>

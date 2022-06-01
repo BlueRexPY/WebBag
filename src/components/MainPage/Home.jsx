@@ -1,6 +1,5 @@
 import React, { useState } from 'react'
 import Header from '../Header/Header'
-import UnderNav from '../UnderNav'
 import Interesting from './Interesting'
 import LastBook from './LastBook'
 import NextLeson from './NextLeson'
@@ -13,9 +12,7 @@ const Home = (props) => {
 
       <LastBook lastBook={state.lastBook} lastBookLink={state.lastBookLink} lastDate={state.lastDate}></LastBook>
       <Interesting></Interesting>
-      <NextLeson nextleson={state.nextleson} lastDate={state.lastDate}></NextLeson>
-
-      <UnderNav></UnderNav>
+      <NextLeson nextLeson={state.nextLeson} nextLesonTime={state.nextLesonTime}></NextLeson>
     </div>
   )
 }

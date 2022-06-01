@@ -32,7 +32,6 @@ const BooksList = (props) => {
     <div className='booksWrapper'>
         {renderItems(ListData)}
     </div>
-    <UnderNav></UnderNav>
     </>
   )
 }
