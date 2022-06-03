@@ -1,16 +1,23 @@
 import React from 'react'
+import { useNavigate} from 'react-router-dom';
 
 const Interesting = () => {
+
+    const navigate = useNavigate()
+    const toTests = ()=>{
+        navigate(`/tests/`)
+    }
+
   return (
     <div className='interesting'>
         <p className='dark small interestingText'>Interesting</p>
         <div className='interestingBox row'>
             <div>
-                <div className='interestingBox1 col center'>
+                <div className='interestingBox1 col center' onClick={()=>toTests()}>
                     <div className='big'><i className="fa-solid fa-dna"></i></div>
                     <div className='col'>
-                        <p className='normal'> Biology</p>
-                        <p className='small'> 12 questions</p>
+                        <p className='normal'> Math</p>
+                        <p className='small'> 4 questions</p>
                     </div>
                 </div>
             </div>

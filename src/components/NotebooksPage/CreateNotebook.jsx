@@ -1,5 +1,5 @@
 import React, { useState,useEffect } from 'react'
-import { useNavigate,useParams,useLocation } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 
 
 const CreateNotebook = (props) => {
@@ -14,7 +14,6 @@ const CreateNotebook = (props) => {
   
   const crateNewNotebook=()=>{
     if (newTitle!=''){
-
       props.crateNotebook(newTitle,notebooksListData.length)
       navigate(`/notebooks/`)
     }

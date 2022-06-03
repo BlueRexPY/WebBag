@@ -11,6 +11,9 @@ import UnderNav from './components/UnderNav';
 import NotebooksList from './components/NotebooksPage/NotebooksList';
 import CreateNotebook from './components/NotebooksPage/CreateNotebook';
 import Notebook from './components/NotebooksPage/Notebook';
+import Test from './components/TestPage/Test';
+import FinishTest from './components/TestPage/FinishTest';
+import TestsList from './components/TestPage/TestsListPage';
 
 
 class App extends React.Component {
@@ -21,6 +24,23 @@ class App extends React.Component {
 
     lastBook: "chemistry",
     lastBookLink: "1RNU8UkxKeS7j8J6rba8eqeWbmpAMzPFd",
+
+    lastGrade: 0,
+    testsListData:[
+      ["Math1",[
+        ["2+2=?",4,2,3,1],
+        ["2+1=?",3,2,4,1],
+        ["8+8=?",16,42,36,1],
+        ["77+33=?",110,100,23,54],
+      ],],
+      
+      ["Math2",[
+        ["2-2=?",0,2,3,1],
+        ["2-1=?",1,2,4,45],
+        ["8+1=?",9,42,36,1],
+        ["77+7=?",70,100,23,54],
+      ],], 
+    ],
 
     timetable:[
     ["Ukrainian","English","Chemistry","Physics","Math","Physics","English","None"],
@@ -102,6 +122,10 @@ class App extends React.Component {
     this.setData(nextTime,nextLeson)
   }
 
+  setLastGrade=(grade)=>{
+    this.setState({lastGrade:grade})
+  }
+
   setData=(nextLesonUpdate,nextLesonTimeUpdate)=>{
     this.setState({nextLeson: nextLesonUpdate,nextLesonTime: nextLesonTimeUpdate,date: new Date()})
   }
@@ -126,6 +150,10 @@ class App extends React.Component {
           <Route path="notebooks" element={<NotebooksList notebooksList={this.state.notebooksListDate}/>} />
           <Route path="createnotebook" element={<CreateNotebook crateNotebook={this.crateNotebook}notebooksList={this.state.notebooksListDate}/>} />
           <Route path="notebook/:id" element={<Notebook updateNotebooks={this.updateNotebooks} notebooksList={this.state.notebooksListDate}/>} />
+
+          <Route path="tests" element={<TestsList testsList={this.state.testsListData} setLastGrade={this.setLastGrade}/>} />
+          <Route path="test/:testId/:id" element={<Test lastGrade={this.state.lastGrade} updateLastGrade={this.updateLastGrade} testsList={this.state.testsListData} setLastGrade={this.setLastGrade}/>} />
+          <Route path="finish" element={<FinishTest lastGrade={this.state.lastGrade}/>} />
 
           <Route path="home" element={<Home state={this.state}/>} />
         </Route>
