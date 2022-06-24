@@ -1,3 +1,5 @@
+![Banner](https://cdn.discordapp.com/attachments/736633764930912257/989998793867005982/WEBBAG.png)
+
 # WebBag
 Educational platform for easy learning
 
