@@ -4,7 +4,7 @@
 Educational platform for easy learning
 
 ### Description 
-WebBag -  a lot of work with state and routes
+WebBag -  a lot of work with state and routes <br>
 <img src="https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB"> 
 <img src="https://img.shields.io/badge/React_Router-CA4245?style=for-the-badge&logo=react-router&logoColor=white"> 
 <img src="https://img.shields.io/badge/SASS-hotpink.svg?style=for-the-badge&logo=SASS&logoColor=white"> 
