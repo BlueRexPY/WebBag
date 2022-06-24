@@ -24,7 +24,7 @@ link on video, figma, producthunt, pitch
 </a>
 
 <a target="_blank" href="https://pitch.com/public/b59aac33-dca2-4440-bf39-9d0c80eccc0f">
-    <img src="https://shields.io/badge/-Pitch-blue"/>
+    <img src="https://img.shields.io/badge/Pitch-%232E7EEA.svg?style=for-the-badge&logo=Pitch&logoColor=white"/>
 </a>
 
 
