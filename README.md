@@ -12,15 +12,15 @@ WebBag -  a lot of work with state and routes <br>
 link on video, figma, producthunt, pitch
 
 <a target="_blank" href="https://youtu.be/8iubsM9h4cU">
-    <img src="https://shields.io/badge/-YouTube-red"/>
+    <img src="https://img.shields.io/badge/YouTube-%23FF0000.svg?style=for-the-badge&logo=YouTube&logoColor=white"/>
 </a>
 
 <a target="_blank" href="https://www.figma.com/file/c1ktmShj9JDdhyFqnoYbX4/WebBag2.0?node-id=0%3A1">
-    <img src="https://shields.io/badge/-Figma-blue"/>
+    <img src="https://img.shields.io/badge/figma-%23F24E1E.svg?style=for-the-badge&logo=figma&logoColor=white"/>
 </a>
 
 <a target="_blank" href="https://www.producthunt.com/products/webbag#webbag">
-    <img src="https://shields.io/badge/-Producthunt-orange"/>
+    <img src="https://img.shields.io/badge/Producthunt-%23ff6347.svg?style=for-the-badge&logo=Pitch&logoColor=white"/>
 </a>
 
 <a target="_blank" href="https://pitch.com/public/b59aac33-dca2-4440-bf39-9d0c80eccc0f">
