@@ -9,7 +9,7 @@ WebBag -  a lot of work with state and routes <br>
 <img src="https://img.shields.io/badge/React_Router-CA4245?style=for-the-badge&logo=react-router&logoColor=white"> 
 <img src="https://img.shields.io/badge/SASS-hotpink.svg?style=for-the-badge&logo=SASS&logoColor=white"> 
 
-link on video, figma, producthunt, pitch, site
+### link on video, figma, producthunt, pitch, site
 
 <a target="_blank" href="https://web-bag.vercel.app">
     <img src="https://img.shields.io/badge/vercel-%23000000.svg?style=for-the-badge&logo=vercel&logoColor=white"/>
